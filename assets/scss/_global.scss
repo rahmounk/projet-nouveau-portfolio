@@ -1,0 +1,133 @@
+//***----HEADER----
+header {
+   border: 1px solid black;
+
+   nav {
+      @include flex(row, space-around, center);
+      h1 {
+         padding: 30px;
+      }
+      ul {
+         @include flex(row, center, center);
+
+         li {
+            padding: 30px;
+            color: black;
+            background-color: #09417ade;
+         }
+      }
+   }
+}
+
+//*** ----SECITON AVEC BACKGROUND IMAGE BIENVENUE----
+#section1_image {
+   background-image: url(../../assets/image/backgroundimage.png);
+   height: 90vh;
+
+   @include flex(column, center, center);
+
+   h2 {
+      font-size: 4rem;
+      color: white;
+      text-align: center;
+      span {
+         font-size: 2.5rem;
+      }
+   }
+
+   p {
+      color: rgb(173, 76, 76);
+      font-size: 2rem;
+   }
+}
+
+//***----SECTION SKILLS----
+#section2_skills {
+   background-color: #f9f9f9;
+   padding: 30px 0 30px 0;
+
+   h2 {
+      text-align: center;
+   }
+
+   #flex_skills_cards {
+      @include flex(row, center, center);
+      flex-wrap: wrap;
+   }
+
+   .container_skills {
+      width: 300px;
+      border: 1px solid black;
+
+      @include flex(column, center, center);
+      flex-wrap: wrap;
+      text-align: center;
+   }
+}
+
+//***----SECTION 3 ABOUT----
+#section3_about {
+   border: 1px solid red;
+
+   padding: 50px 0 50px 0;
+   @include flex(row, center, center);
+
+   h2 {
+      text-align: center;
+   }
+
+   #flex_about {
+      @include flex(row, center, center);
+      flex-wrap: wrap;
+
+      #about {
+         width: 45%;
+         border: 1px solid purple;
+
+         padding: 25px;
+
+         p {
+            margin-bottom: 15px;
+         }
+      }
+
+      #langage {
+         width: 45%;
+         border: 1px solid brown;
+
+         padding: 25px;
+
+         p {
+            margin-bottom: 15px;
+         }
+      }
+   }
+}
+
+//***----MY WORKS-----
+#my_works {
+   position: relative;
+   padding: 30px;
+
+   background-color: #f9f9f9;
+
+   h2 {
+      text-align: center;
+   }
+
+   #flex_works {
+      @include flex(row, space-evenly, center);
+      flex-wrap: wrap;
+
+      .img_works {
+         width: 25%;
+         border: 1px solid rgb(255, 255, 255);
+
+         .img_responsive {
+            width: 100%;
+         }
+      }
+   }
+}
+
+//***---- CONTACT-----
